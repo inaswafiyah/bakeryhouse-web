@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/logo_bakery.png" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Bakery House</title>
+</head>
+
+<body>
+
+    <header class="header" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1050; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div class="container">
+            <!-- Logo Section -->
+            <div class="logo" style="top: 50px;">
+                <img src="assets/icons/logo_bakery.png" alt="Chocolate Store Logo" class="logo-img">
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <div class="top-links">
+                    <a href="#" class="top-link">Gift Certificates</a>
+                    <span class="divider">|</span>
+                    <a href="#" class="top-link">Sign In</a>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">CHOCOLATE <span class="dropdown-icon">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dark Chocolate</a></li>
+                            <li><a href="#">Milk Chocolate</a></li>
+                            <li><a href="#">White Chocolate</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">TRUFFLES <span class="dropdown-icon">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Classic Truffles</a></li>
+                            <li><a href="#">Flavored Truffles</a></li>
+                            <li><a href="#">Seasonal Truffles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">BAKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">DARK TRUFFLES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">BLOG</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Section 1 -->
+     <section class="bakery-section position-relative">
+    <div class="container-fluid">
+      <div class="row g-3 justify-content-center">
+        <!-- 8 Gambar -->
+        <div class="col-6 col-md-3 bakery-img-wrapper"><img src="assets/images/bread.png" class="img-fluid rounded bakery-img" alt="Bakery 1"></div>
+        <div class="col-6 col-md-3 bakery-img-wrapper"><img src="assets/images/bkry.png" class="img-fluid rounded bakery-img" alt="Bakery 2"></div>
+        <div class="col-6 col-md-3 bakery-img-wrapper"><img src="assets/images/Recipe__Lafayette_croissant.png" class="img-fluid rounded bakery-img" alt="Bakery 3"></div>
+        <div class="col-6 col-md-3 bakery-img-wrapper"><img src="assets/images/bread_food.png" class="img-fluid rounded bakery-img" alt="Bakery 4"></div>
+        <div class="col-6 col-md-3 bakery-img-wrapper"><img src="assets/images/Pancake_Flavors_Galore.png" class="img-fluid rounded bakery-img" alt="Bakery 5"></div>
+        <div class="col-6 col-md-3 bakery-img-wrapper"><img src="assets/images/bread4.png" class="img-fluid rounded bakery-img" alt="Bakery 6"></div>
+        <div class="col-6 col-md-3 bakery-img-wrapper"><img src="assets/images/waffle_with_chocolate_isolated.png" class="img-fluid rounded bakery-img" alt="Bakery 7"></div>
+        <div class="col-6 col-md-3 bakery-img-wrapper"><img src="assets/images/Cinnamon_Roll_Breakfast_Sweet_Spiral_Pastry_Food.png" class="img-fluid rounded bakery-img" alt="Bakery 8"></div>
+      </div>
+
+      <!-- CARD TENGAH -->
+      <div class="center-card text-center">
+        <h1 class="fw-bold">Freshly Baked,<br>Just for You!</h1>
+        <p class="text-muted">Delicious, toasts and a variety of delicious specialty breads just for you every day.</p>
+        <a href="#" class="btn btn-brown px-4 py-2">ORDER NOW</a>
+      </div>
+    </div>
+  </section>
+     <!-- End Section 1 -->
+
+     <!-- Section 2 -->
+     <section class="featured-section featured-section-wave py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Featured</h2>
+    <p class="text-center text-muted mb-5">Special offers from our bread selection every morning.</p>
+
+    <div class="row g-4 d-flex align-items-stretch">
+      <!-- Gambar kiri -->
+      <div class="col-12 col-md-4 d-flex">
+        <img src="assets/images/stephanierosebrooks.jpeg" class="img-fluid rounded w-100 object-cover" alt="Bakery 1" />
+      </div>
+
+      <!-- Gambar tengah -->
+      <div class="col-12 col-md-4 d-flex">
+        <img src="assets/images/Make your day extra sweet with these irresistibly fluffy.jpeg" class="img-fluid rounded w-100 object-cover" alt="Bakery 2" />
+      </div>
+
+      <!-- Teks kanan -->
+      <div class="col-12 col-md-4 d-flex">
+        <div class="d-flex flex-column justify-content-between w-100 p-3">
+          <div>
+            <h3 class="fw-bold mb-3">Morning<br>Special</h3>
+            <p class="text-muted">
+              
+Get attractive discounts on a wide selection of sweet pastries every morning!
+            </p>
+            <p class="text-muted">
+             Try our favorite croissants and bread, made fresh daily. Don't miss our selection of mini cakes, perfect for breakfast!
+            </p>
+          </div>
+          <div>
+            <a href="#" class="btn btn-brown mt-3 px-4 py-2">Enjoying bread Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <!--End Section 2  -->
+
+      <!-- Section 3 -->
+       <section class="artisan-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-5 flex-wrap">
+
+      <!-- Kolom 1 -->
+      <div class="col-12 col-md-6 d-flex align-items-center flex-wrap">
+        <div class="col-12 col-sm-6">
+          <h4 class="fw-bold">Banana Honey Pancakes</h4>
+          <p class="text-muted">
+            Fluffy pancakes stacked high, topped with fresh banana slices and drizzled with golden honey. A sweet and satisfying breakfast to brighten your morning.
+          </p>
+          <a href="#" class="btn btn-brown mt-2">Order Now</a>
+        </div>
+        <div class="col-12 col-sm-6 text-center mt-4 mt-sm-0">
+          <img src="assets/images/Perfect banana pancakes with a drizzle of maple syrup.jpeg" alt="Artisan Bread" class="circle-img" />
+        </div>
+      </div>
+
+      <!-- Kolom 2 -->
+      <div class="col-12 col-md-6 d-flex align-items-center flex-wrap">
+        <div class="col-12 col-sm-6 order-sm-1">
+          <h4 class="fw-bold">Strawberry Banana Pancakes</h4>
+          <p class="text-muted">
+            A fluffy pancake stack topped with fresh strawberries and banana slices, drenched in rich maple syrup. A perfect blend of fruity sweetness and morning comfort.
+          </p>
+          <a href="#" class="btn btn-brown mt-2">Order Now</a>
+        </div>
+        <div class="col-12 col-sm-6 text-center mt-4 mt-sm-0 order-sm-2">
+          <img src="assets/images/Classic American Pancakes – Fluffy & Golden Every Time.jpeg" alt="Sweet Pastry" class="circle-img" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+       <!--End Section 3 -->
+
+       <!-- Section 4 -->
+         <section class="why-choose-us py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Why Choose Us?</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card custom-card text-center h-100">
+            <img src="assets/images/Fluffy Fresh Cream Doughnuts 🍩✨.jpeg" class="card-img-top" alt="Artisan Breads">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Artisan Breads</h5>
+              <p class="card-text">Fresh-baked. Beautifully made. Breads that melt in your mouth, baked with natural flavors.</p>
+              <a href="#" class="btn btn-custom">Team Bakery</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card custom-card text-center h-100">
+            <img src="assets/images/hap.jpeg" class="card-img-top" alt="Sweet Pastries">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Sweet Pastries</h5>
+              <p class="card-text">Indulge in our rich and delightful sweet pastries made from premium ingredients.</p>
+              <a href="#" class="btn btn-custom">Choco Factory</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card custom-card text-center h-100">
+            <img src="assets/images/download (23).jpeg" class="card-img-top" alt="Custom Cakes">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Custom Cakes</h5>
+              <p class="card-text">Celebrate with style using our custom-made cakes for every special moment.</p>
+              <a href="#" class="btn btn-custom">Mix Creations</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+        <!-- End Section 4 -->
+
+        <!-- Section 5 -->
+          <section class="bakery-showcase">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+<h2 class="section-title coming-soon section-title">Coming Soon</h2>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="images-container">
+                        <!-- Left Image -->
+                        <div class="image-item left-image">
+                            <div class="product-image">
+                                <img src="assets/images/Garlic Butter Turkey Bacon Cheeseburger Roll-Ups.jpeg" alt="Chef Profile" class="img-fluid rounded">
+                            </div>
+                        </div>
+                        
+                        <!-- Pastries Image - Center (Front) -->
+                        <div class="image-item center-image">
+                            <div class="product-image">
+                                <img src="assets/images/sanwitch.jpeg" alt="Fresh Croissants" class="img-fluid rounded">
+                            </div>
+                        </div>
+                        
+                        <!-- Bread Image - Right -->
+                        <div class="image-item right-image">
+                            <div class="product-image">
+                                <img src="assets/images/Croissant Sandwich with Ham & Swiss Cheese (1).jpeg" alt="Artisan Bread" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+         <!-- End Section 5 -->
+
+         <!-- Section 6 -->
+            <section class="reviews-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+<h2 class="section-title">What Our Customers Say</h2>
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" style="position: fixed; bottom: 32px; right: 32px; z-index: 9999; background: #8b4513; color: #fff; border: none; border-radius: 50%; width: 48px; height: 48px; display: none; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15); cursor: pointer;">
+  <i class="fa-solid fa-arrow-up" style="font-size: 1.5rem;"></i>
+</button>
+          <p class="section-subtitle">Read authentic reviews from our happy customers</p>
+        </div>
+      </div>
+
+      <!-- Swiper Slider -->
+      <div class="swiper mySwiper mt-5">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="customer-image">
+                  <img src="assets/people/Putri padang, ifood.jpeg" alt="Sarah Miller" />
+                </div>
+                <div class="customer-info">
+                  <h4 class="customer-name">Putri Padang</h4>
+                  <p class="customer-role">Owner Roti Sweety</p>
+                </div>
+              </div>
+              <div class="star-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">"The croissants here are absolutely divine! Every bite is buttery perfection."</p>
+              <div class="review-date"><i class="fas fa-clock"></i> <span>2 days ago</span></div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="customer-image">
+                  <img src="assets/people/EAPFFFFEL KRAMBELLL, APPLE CRUMBLE VERSI BAHASA PERANCIS.jpeg" alt="Michael Johnson" />
+                </div>
+                <div class="customer-info">
+                  <h4 class="customer-name">Chef Juna</h4>
+                  <p class="customer-role">Master Chef</p>
+                </div>
+              </div>
+              <div class="star-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">"Best bakery in town! Their artisan bread is fresh every morning."</p>
+              <div class="review-date"><i class="fas fa-clock"></i> <span>5 days ago</span></div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="customer-image">
+                  <img src="assets/people/gem faham (@kakgem118) • Foto dan video Instagram.jpeg" alt="Emily Davis" />
+                </div>
+                <div class="customer-info">
+                  <h4 class="customer-name">Kak Gem</h4>
+                  <p class="customer-role">Konsumen Setia</p>
+                </div>
+              </div>
+              <div class="star-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">"Custom cake for my daughter's birthday exceeded all expectations!"</p>
+              <div class="review-date"><i class="fas fa-clock"></i> <span>1 week ago</span></div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="customer-image">
+                  <img src="assets/people/cha kangyoon.jpeg" alt="David Wilson" />
+                </div>
+                <div class="customer-info">
+                  <h4 class="customer-name">Cha Kang Yoon</h4>
+                  <p class="customer-role">Bestie</p>
+                </div>
+              </div>
+              <div class="star-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              </div>
+              <p class="review-text">"Great place for meetings. Coffee and pastries are perfect combo."</p>
+              <div class="review-date"><i class="fas fa-clock"></i> <span>2 weeks ago</span></div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="customer-image">
+                  <img src="assets/people/Choo Youngwoo for BAZAAR (Behind-the-scene).jpeg" alt="Lisa Thompson" />
+                </div>
+                <div class="customer-info">
+                  <h4 class="customer-name">Choo Young Woo</h4>
+                  <p class="customer-role">Husband</p>
+                </div>
+              </div>
+              <div class="star-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">"Sourdough bread here is phenomenal! You can taste the care."</p>
+              <div class="review-date"><i class="fas fa-clock"></i> <span>3 weeks ago</span></div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="customer-image">
+                  <img src="assets/people/whng2.jpg" alt="Robert Brown" />
+                </div>
+                <div class="customer-info">
+                  <h4 class="customer-name">Byeon Woo-Seok</h4>
+                  <p class="customer-role">My Luv</p>
+                </div>
+              </div>
+              <div class="star-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">"As a chef, I appreciate the traditional techniques used here."</p>
+              <div class="review-date"><i class="fas fa-clock"></i> <span>1 month ago</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+          <!-- End Section 6 -->
+
+          <!-- Footer -->
+           <footer class="custom-footer py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Gambar -->
+      <div class="col-md-4 text-center text-md-start mb-4 mb-md-0 position-relative" style="display: inline-block;">
+        <img src="assets/images/download (25).jpeg" alt="Bread" class="img-fluid footer-image" />
+        <div style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); background: rgba(255,255,255,0.8); padding: 6px 16px; border-radius: 12px; font-weight: bold; color: #8b4513; font-size: 1rem;">
+          <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>Jl. Bakery House No. 12, Padang
+        </div>
+      </div>
+
+      <!-- Ikon Sosmed -->
+      <div class="col-md-8">
+        <h4 class="footer-title mb-4 text-center text-md-start">Order via Our Social Media</h4>
+        <div class="row text-center text-md-start">
+          <div class="col-4">
+            <i class="fa-brands fa-instagram footer-icon instagram"></i>
+            <p class="footer-label">Instagram</p>
+          </div>
+          <div class="col-4">
+            <i class="fa-brands fa-tiktok footer-icon"></i>
+            <p class="footer-label">TikTok</p>
+          </div>
+          <div class="col-4">
+            <i class="fa-solid fa-store footer-icon"></i>
+            <p class="footer-label">Shopee</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+  <!-- End Footer -->
+
+           <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.2,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        }
+      }
+    });
+  </script>
+
+    <script>
+      // Scroll to Top Button functionality
+      const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          scrollToTopBtn.style.display = 'flex';
+        } else {
+          scrollToTopBtn.style.display = 'none';
+        }
+      });
+      scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mainNav = document.getElementById('mainNav');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+        mobileMenuToggle.addEventListener('click', function () {
+            mainNav.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+            mobileMenuOverlay.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Close mobile menu when clicking overlay
+        mobileMenuOverlay.addEventListener('click', function () {
+            mainNav.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function (event) {
+            if (!event.target.closest('.header') && !event.target.closest('.main-nav')) {
+                mainNav.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Dropdown functionality
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', function (e) {
+                e.preventDefault();
+                this.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
